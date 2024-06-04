@@ -2,7 +2,7 @@ import "./button.css";
 
 function Button(props) {
     function handleClick(action) {
-        if (action == "delete")
+        if (action === "delete")
             alert(props.text);
     }
     return (

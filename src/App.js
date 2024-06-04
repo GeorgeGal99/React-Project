@@ -37,7 +37,7 @@ function App() {
 
 function Wellcome(props) {
   return (
-    <h1>Hello,{props.name == "George" ? "CEofi" : "Adevar"},{props.surname}</h1>
+    <h1>Hello,{props.name === "George" ? "CEofi" : "Adevar"},{props.surname}</h1>
   )
 }
 
