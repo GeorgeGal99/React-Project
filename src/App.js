@@ -5,9 +5,10 @@ import Button from "./components/button.js"
 
 const message = "Hello from React"
 const User = { name: "George", surname: "Gal" };
-const ticket = [
+const tickets = [
   { name: "Radu", concertName: "Guns&Roses", time: "12:20" },
-  { name: "Tiberiu", concertName: "ACDC", time: "14:20" }]
+  { name: "Tiberiu", concertName: "ACDC", time: "14:20" },
+  { name: "Florin", concertName: "ACDC", time: "14:20" }]
 
 
 function random() {
@@ -24,12 +25,14 @@ function App() {
       {/* <Wellcome name="George" surname="Gal"></Wellcome>
       <Ticket></Ticket> */}
       {/* {random()} */}
-      <Ticket name={ticket[0].name} concertName={ticket[0].concertName} time={ticket[0].time}></Ticket>
-      {ticket.map(tick => {
-        return <Ticket name={tick.name} concertName={tick.concertName} time={tick.time}></Ticket>
+      
+      <Ticket name={tickets[0].name} concertName={tickets[0].concertName} time={tickets[0].time}></Ticket>
 
-      })}
-
+      {
+        tickets.map(tick => {
+          return <Ticket name={tick.name} concertName={tick.concertName} time={tick.time}></Ticket>
+        })
+      }
     </div >
   );
 }
