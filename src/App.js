@@ -25,8 +25,8 @@ function App() {
       {/* <Wellcome name="George" surname="Gal"></Wellcome>
       <Ticket></Ticket> */}
       {/* {random()} */}
-      
-      <Ticket name={tickets[0].name} concertName={tickets[0].concertName} time={tickets[0].time}></Ticket>
+
+      {/* <Ticket name={tickets[0].name} concertName={tickets[0].concertName} time={tickets[0].time}></Ticket> */}
 
       {
         tickets.map(tick => {
@@ -43,5 +43,11 @@ function Wellcome(props) {
     <h1>Hello,{props.name === "George" ? "CEofi" : "Adevar"},{props.surname}</h1>
   )
 }
+
+
+
+
+
+
 
 export default App;
