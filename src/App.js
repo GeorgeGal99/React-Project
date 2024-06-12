@@ -2,6 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Ticket from "./components/ticket.js"
 import Button from "./components/button.js"
+import Input from './components/input.js';
+import Register from './components/login.js';
+
+
+
+import { useState } from 'react';
+
 
 const message = "Hello from React"
 const User = { name: "George", surname: "Gal" };
@@ -11,9 +18,9 @@ const tickets = [
   { name: "Florin", concertName: "ACDC", time: "14:20" }]
 
 
-function random() {
-  return Math.random() * 100;
-}
+// function random() {
+//   return Math.random() * 100;
+// }
 
 
 function App() {
@@ -28,11 +35,13 @@ function App() {
 
       {/* <Ticket name={tickets[0].name} concertName={tickets[0].concertName} time={tickets[0].time}></Ticket> */}
 
-      {
+      {/* {
         tickets.map(tick => {
           return <Ticket name={tick.name} concertName={tick.concertName} time={tick.time}></Ticket>
         })
-      }
+      } */}
+      {/* <Input></Input> */}
+      <Register></Register>
     </div >
   );
 }
@@ -43,6 +52,8 @@ function Wellcome(props) {
     <h1>Hello,{props.name === "George" ? "CEofi" : "Adevar"},{props.surname}</h1>
   )
 }
+
+
 
 
 
